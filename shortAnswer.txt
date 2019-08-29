@@ -1,0 +1,36 @@
+3) Both return 
+syntax error, unexpected '{', expecting ';'
+
+4) function _construct is a  way to define a constructor in PHP.
+Every time a new instance of the class is created, the code in the constructor will be executed on the new instance. 
+Another way to deine a constructor is to create a function in the class with the same name as the class.
+
+5) I prefer React to Angular because react uses the virtual DOM making it faster than Angular. Angular has more out of the box 
+functionality than React which only handles views, but with libraries like react-router you can still get what you need from react 
+you ae just the one responsible for setting it up correctly. Angular seems to be better at creating larger cohesive websites 
+for enterprises. I like JSX. Being able to structure html inside of javascript files of the component that will be rendered makes 
+the code easier to read and understand for me. I also really like that React and React native being so simlar means that alot of 
+code can be reused when making mobile versions of your app. But that may also be true of NativeScript, I have not experienced 
+developing with it yet. 
+
+6) Interfaces are rules used when implementing classes. Interfaces cannot have concrete methods, 
+only abstract ones, and they cannot instantiate themselves but classes can instantiate them. Abstract 
+classes are classes that have one or more abstract methods (methods without a body) and any number of 
+concrete methods. They are also blue prints for classes like interfaces, but they come with some baked 
+in functionality via their concrete methods. 
+
+7) Static is used to make properties and methods of a class accessible without having an instantiation of the class
+
+8) Strpos returns the start value  so since yaba is in the first position, it returns 0.  
+echo "\"" . $str1 . "\" contains \"" . $str2 . "\""; will only run if it returns true, which strpos will never do. 
+
+Fixed by changing the if conditional statement to != null. This way if any integer is returned, the first option will be executed, 
+else if false is returned because string1 does not contain string2, the else statement will be executed. 
+
+$str1 = 'yabadabadoo';
+$str2 = 'yaba';
+if (strpos($str1,$str2)!==false) {
+    echo "\"" . $str1 . "\" contains \"" . $str2 . "\"";
+} else {
+    echo "\"" . $str1 . "\" does not contain \"" . $str2 . "\"";
+}
